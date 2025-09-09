@@ -1,0 +1,11 @@
+C:\Users\nico_\source\repos\menuRestaurante\Domain\bin\Debug\net9.0\Domain.deps.json
+C:\Users\nico_\source\repos\menuRestaurante\Domain\bin\Debug\net9.0\Domain.dll
+C:\Users\nico_\source\repos\menuRestaurante\Domain\bin\Debug\net9.0\Domain.pdb
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\Domain.dll
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\refint\Domain.dll
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\Domain.pdb
+C:\Users\nico_\source\repos\menuRestaurante\Domain\obj\Debug\net9.0\ref\Domain.dll

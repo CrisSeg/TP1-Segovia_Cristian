@@ -13,3 +13,4 @@ C:\Users\nico_\source\repos\menuRestaurante\Application\obj\Debug\net9.0\Applica
 C:\Users\nico_\source\repos\menuRestaurante\Application\obj\Debug\net9.0\refint\Application.dll
 C:\Users\nico_\source\repos\menuRestaurante\Application\obj\Debug\net9.0\Application.pdb
 C:\Users\nico_\source\repos\menuRestaurante\Application\obj\Debug\net9.0\ref\Application.dll
+C:\Users\nico_\source\repos\menuRestaurante\Application\obj\Debug\net9.0\Application.sourcelink.json

@@ -29,6 +29,9 @@ builder.Services.AddScoped<IDishQuery, DishQuery>();
 // Custom Sevices get
 builder.Services.AddScoped<ISeviceDishGet, ServiceDishGet>();
 
+// Custom Services Update
+builder.Services.AddScoped<IServicesDishUpdate, ServiceUpdateDish>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

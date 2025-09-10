@@ -172,3 +172,4 @@ C:\Users\nico_\source\repos\menuRestaurante\menuRestaurante\bin\Debug\net9.0\run
 C:\Users\nico_\source\repos\menuRestaurante\menuRestaurante\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\nico_\source\repos\menuRestaurante\menuRestaurante\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\nico_\source\repos\menuRestaurante\menuRestaurante\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\nico_\source\repos\menuRestaurante\menuRestaurante\obj\Debug\net9.0\menuRestaurante.sourcelink.json

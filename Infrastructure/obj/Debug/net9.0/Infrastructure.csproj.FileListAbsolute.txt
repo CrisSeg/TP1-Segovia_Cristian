@@ -17,3 +17,4 @@ C:\Users\nico_\source\repos\menuRestaurante\Infrastructure\obj\Debug\net9.0\refi
 C:\Users\nico_\source\repos\menuRestaurante\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
 C:\Users\nico_\source\repos\menuRestaurante\Infrastructure\obj\Debug\net9.0\Infrastructure.genruntimeconfig.cache
 C:\Users\nico_\source\repos\menuRestaurante\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll
+C:\Users\nico_\source\repos\menuRestaurante\Infrastructure\obj\Debug\net9.0\Infrastructure.sourcelink.json

@@ -1,6 +1,5 @@
 ﻿using Application.DTOs;
 using Application.Response;
-using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace Application.Interfaces
 {
-    public interface IDishCommand
+    public interface IServicesDishUpdate
     {
-        Task AddDish(Dish dish);
-        Task<UpdateDishRequest> UpdateDish(Guid id, UpdateDishRequest request);
+        Task<UpdateDishRequest> updateDish(Guid Id, UpdateDishRequest request);
     }
 }

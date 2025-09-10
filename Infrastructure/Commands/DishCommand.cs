@@ -1,4 +1,6 @@
-﻿using Application.Interfaces;
+﻿using Application.DTOs;
+using Application.Interfaces;
+using Application.Response;
 using Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -24,9 +26,21 @@ namespace Infrastructure.Commands
             await _context.SaveChangesAsync();
         }
 
-        public Task DeleteDish(int dishId)
+        public async Task<UpdateDishRequest> UpdateDish(Guid id ,UpdateDishRequest updateDish)
         {
-            throw new NotImplementedException();
+            var dish = await _context.Dishes.FindAsync(id);
+            if (dish is null)
+                throw new KeyNotFoundException($"No se encontró el plato con ID {id}");
+
+            dish.NameDish = updateDish.NameDish;
+            dish.Description = updateDish.Description;
+            dish.Price = updateDish.Price;
+            dish.CategoryId = updateDish.CategoryId;
+            dish.ImageUrl = updateDish.ImageUrl;
+
+            await _context.SaveChangesAsync();
+
+            return updateDish;
         }
     }
 }

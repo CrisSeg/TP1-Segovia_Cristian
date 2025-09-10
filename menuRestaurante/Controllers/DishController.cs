@@ -11,11 +11,13 @@ namespace menuRestaurante.Controllers
     {
         private readonly IServicesDishCreate _service;
         private readonly ISeviceDishGet _servicesGet; 
+        private readonly IServicesDishUpdate _serviceUpdate;
 
-        public DishController(IServicesDishCreate service, ISeviceDishGet serviceGet)
+        public DishController(IServicesDishCreate service, ISeviceDishGet serviceGet, IServicesDishUpdate serviceUp)
         {
             _service = service;
             _servicesGet = serviceGet;
+            _serviceUpdate = serviceUp;
         }
         // Implement actions for the DishController here
         [HttpPost]
@@ -43,6 +45,15 @@ namespace menuRestaurante.Controllers
         public async Task<IActionResult> GetAllDishes()
         {
             var result = await _servicesGet.GetAllDishes();
+            return new JsonResult(result);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateDish(Guid id, UpdateDishRequest request)
+        {
+
+
+            var result = await _serviceUpdate.updateDish(id, request);
             return new JsonResult(result);
         }
     }

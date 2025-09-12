@@ -206,6 +206,7 @@
       "UpdateDishRequest": {
         "required": [
           "categoryId",
+          "isAvailable",
           "nameDish"
         ],
         "type": "object",
@@ -231,6 +232,9 @@
           "categoryId": {
             "type": "integer",
             "format": "int32"
+          },
+          "isAvailable": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

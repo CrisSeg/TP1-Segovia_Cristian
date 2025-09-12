@@ -37,6 +37,7 @@ namespace Infrastructure.Commands
             dish.Price = updateDish.Price;
             dish.CategoryId = updateDish.CategoryId;
             dish.ImageUrl = updateDish.ImageUrl;
+            dish.Avialable = updateDish.IsAvailable;
 
             await _context.SaveChangesAsync();
 

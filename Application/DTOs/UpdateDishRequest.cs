@@ -18,5 +18,7 @@ namespace Application.DTOs
         public string? ImageUrl { get; init; }
         [Required]
         public int CategoryId { get; init; }
+        [Required]
+        public bool IsAvailable { get; init; }
     }
 }

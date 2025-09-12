@@ -43,6 +43,9 @@ namespace menuRestaurante.Controllers
         [HttpGet("dish")]
         public async Task<IActionResult> FilterDish([FromQuery] string? name, [FromQuery] int? categoryId, [FromQuery] SortOrder orderByAsc, [FromQuery] bool? avialable)
         {
+            var dishes = await _servicesGet.GetAllDishes();
+            if ((name != null && dishes.Any(d => d.Name != name)) || (categoryId != null && dishes.Any(d => d.CategoryId != categoryId)))
+                return NotFound("No se encontraron platos con los criterios especificados.");
             var result = await _serviceFilter.FilterDishesByPriceRange(name, categoryId, orderByAsc, avialable);
             return new JsonResult(result);
         }

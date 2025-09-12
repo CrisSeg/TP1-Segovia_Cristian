@@ -17,32 +17,6 @@
   },
   {
     "ContainingType": "menuRestaurante.Controllers.DishController",
-    "Method": "GetAllDishes",
-    "RelativePath": "api/Dish",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "menuRestaurante.Controllers.DishController",
-    "Method": "GetDishById",
-    "RelativePath": "api/Dish/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "menuRestaurante.Controllers.DishController",
     "Method": "UpdateDish",
     "RelativePath": "api/Dish/{id}",
     "HttpMethod": "PUT",
@@ -64,16 +38,31 @@
   },
   {
     "ContainingType": "menuRestaurante.Controllers.DishController",
-    "Method": "GetCategoryById",
-    "RelativePath": "api/Dish/category/{id}",
+    "Method": "FilterDish",
+    "RelativePath": "api/Dish/dish",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "categoryId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "orderByAsc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "avialable",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

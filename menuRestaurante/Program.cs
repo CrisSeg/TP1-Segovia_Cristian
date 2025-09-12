@@ -3,6 +3,7 @@ using Application.Service;
 using Infrastructure.Commands;
 using Infrastructure.Querys;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 using AppContext = Infrastructure.Persistence.AppContext;
 
 
@@ -31,6 +32,15 @@ builder.Services.AddScoped<ISeviceDishGet, ServiceDishGet>();
 
 // Custom Services Update
 builder.Services.AddScoped<IServicesDishUpdate, ServiceUpdateDish>();
+
+// Custom Services Filter
+builder.Services.AddScoped<IServiceDishFilter, ServiceFilterDish>();
+
+// JSon para menu desplegable SortOrder
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 
 var app = builder.Build();
 

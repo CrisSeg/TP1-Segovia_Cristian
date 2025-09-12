@@ -1,4 +1,6 @@
-﻿using Application.Interfaces;
+﻿using Application.DTOs;
+using Application.Enums;
+using Application.Interfaces;
 using Application.Response;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +39,11 @@ namespace Infrastructure.Querys
                             .Include(d => d.Category)
                             .FirstOrDefaultAsync(d => d.DishId == id);
             return dish;
+        }
+
+        public async Task<List<Dish>> GetFilterDish(string? name, int? categoryId, SortOrder orderByAsc, bool? avialable)
+        {
+            return  await _context.Dishes.AsNoTracking().Include(d => d.Category).ToListAsync();
         }
     }
 }

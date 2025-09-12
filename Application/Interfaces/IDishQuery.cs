@@ -1,4 +1,7 @@
-﻿using Domain.Entities;
+﻿using Application.DTOs;
+using Application.Enums;
+using Application.Response;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +15,7 @@ namespace Application.Interfaces
         Task<List<Dish>> GetAllDishes();
         Task<Dish> GetDishById(Guid id);
         Task<string?> GetCategoryById(int id);
+
+        Task<List<Dish>> GetFilterDish(string name, int? categoryId, SortOrder orderByAsc, bool? avialable);
     }
 }

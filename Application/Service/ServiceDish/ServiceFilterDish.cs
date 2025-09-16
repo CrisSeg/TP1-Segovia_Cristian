@@ -1,6 +1,6 @@
 ﻿using Application.DTOs;
 using Application.Enums;
-using Application.Interfaces;
+using Application.Interfaces.InterfaceDish;
 using Application.Response;
 using Domain.Entities;
 using System;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Service
+namespace Application.Service.ServiceDish
 {
     public class ServiceFilterDish : IServiceDishFilter
     {

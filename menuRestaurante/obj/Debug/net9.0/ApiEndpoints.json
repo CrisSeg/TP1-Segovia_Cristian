@@ -1,5 +1,25 @@
 [
   {
+    "ContainingType": "menuRestaurante.Controllers.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "menuRestaurante.Controllers.DeliveryTipeController",
+    "Method": "GetAllDeliveryTypes",
+    "RelativePath": "api/DeliveryTipe",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "menuRestaurante.Controllers.DishController",
     "Method": "CreateDish",
     "RelativePath": "api/Dish",
@@ -65,6 +85,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "menuRestaurante.Controllers.StatusController",
+    "Method": "GetAllStatuses",
+    "RelativePath": "api/Status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

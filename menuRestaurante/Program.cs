@@ -1,5 +1,11 @@
-using Application.Interfaces;
-using Application.Service;
+using Application.Interfaces.InterfaceCategory;
+using Application.Interfaces.InterfaceDeliveryType;
+using Application.Interfaces.InterfaceDish;
+using Application.Interfaces.InterfaceStatus;
+using Application.Service.ServiceCategory;
+using Application.Service.ServiceDeliveryType;
+using Application.Service.ServiceDish;
+using Application.Service.ServiceStatus;
 using Infrastructure.Commands;
 using Infrastructure.Querys;
 using Microsoft.EntityFrameworkCore;
@@ -41,6 +47,21 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 });
+
+
+// Implementaciones de Category
+// Custom Services get Category
+builder.Services.AddScoped<ICategoryQuery, CategoryQuery>();
+builder.Services.AddScoped<IServiceCategoryGet, ServiceCategoryGet>();
+
+
+// Implementaciones de DeliveryType
+builder.Services.AddScoped<IServiceDeliveryTypeGet, ServiceDeliveryTypeGet>();
+builder.Services.AddScoped<IDeliveryTypeQuery1, DeliveryTypeQuery>();
+
+// Implementaciones de Status
+builder.Services.AddScoped<IServiceStatusGet, ServiceStatusGet>();
+builder.Services.AddScoped<IStatusQuery, StatusQuery>();
 
 var app = builder.Build();
 

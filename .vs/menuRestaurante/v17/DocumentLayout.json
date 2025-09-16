@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\infrastructure\\commands\\dishcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\commands\\dishcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\dtos\\updatedishrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\dtos\\updatedishrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\serviceupdatedish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\serviceupdatedish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\interfaces\\iservicesdishupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iservicesdishupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DishCommand.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Commands\\DishCommand.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Commands\\DishCommand.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Commands\\DishCommand.cs",
-              "RelativeToolTip": "Infrastructure\\Commands\\DishCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T22:39:31.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateDishRequest.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\DTOs\\UpdateDishRequest.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\UpdateDishRequest.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\DTOs\\UpdateDishRequest.cs",
-              "RelativeToolTip": "Application\\DTOs\\UpdateDishRequest.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T22:38:48.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceUpdateDish.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceUpdateDish.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\ServiceUpdateDish.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceUpdateDish.cs",
-              "RelativeToolTip": "Application\\Service\\ServiceUpdateDish.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T22:38:43.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IServicesDishUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Interfaces\\IServicesDishUpdate.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IServicesDishUpdate.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Interfaces\\IServicesDishUpdate.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IServicesDishUpdate.cs",
+              "DocumentIndex": 2,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "menuRestaurante\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "menuRestaurante\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T22:38:37.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DishController.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\DishController.cs",
-              "RelativeDocumentMoniker": "menuRestaurante\\Controllers\\DishController.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\DishController.cs",
-              "RelativeToolTip": "menuRestaurante\\Controllers\\DishController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAjwC8AAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T01:32:12.679Z",
+              "WhenOpened": "2025-09-16T03:51:13.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "menuRestaurante\\Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "menuRestaurante\\Controllers\\StatusController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T03:49:44.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Program.cs",
               "RelativeDocumentMoniker": "menuRestaurante\\Program.cs",
               "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Program.cs",
               "RelativeToolTip": "menuRestaurante\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADYAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T04:26:47.766Z",
               "EditorCaption": ""

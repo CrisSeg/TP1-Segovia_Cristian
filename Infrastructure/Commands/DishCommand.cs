@@ -1,5 +1,5 @@
 ﻿using Application.DTOs;
-using Application.Interfaces;
+using Application.Interfaces.InterfaceDish;
 using Application.Response;
 using Domain.Entities;
 using System;

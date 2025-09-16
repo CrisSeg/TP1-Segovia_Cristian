@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Interfaces
+namespace Application.Interfaces.InterfaceDish
 {
-    public interface IServicesDishCreate
+    public interface IDishCommand
     {
-        Task<CreateDishResponse> createDish(CreateDishRequest request); 
+        Task AddDish(Dish dish);
+        Task<UpdateDishRequest> UpdateDish(Guid id, UpdateDishRequest request);
     }
 }

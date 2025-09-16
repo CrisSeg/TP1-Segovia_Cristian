@@ -1,6 +1,6 @@
 ﻿using Application.DTOs;
 using Application.Enums;
-using Application.Interfaces;
+using Application.Interfaces.InterfaceDish;
 using Application.Response;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;

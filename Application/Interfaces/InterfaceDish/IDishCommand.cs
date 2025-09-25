@@ -12,6 +12,5 @@ namespace Application.Interfaces.InterfaceDish
     public interface IDishCommand
     {
         Task AddDish(Dish dish);
-        Task<UpdateDishRequest> UpdateDish(Guid id, UpdateDishRequest request);
     }
 }

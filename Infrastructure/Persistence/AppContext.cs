@@ -91,7 +91,8 @@ namespace Infrastructure.Persistence
             modelBuilder.Entity<Order>()
                 .HasOne(o => o.OverallStatus)
                 .WithMany((Status s) => s.SOrders)
-                .HasForeignKey(o => o.OStatusId);
+                .HasForeignKey(o => o.OStatusId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             //Entidad DeliveryType
             modelBuilder.Entity<DeliveryType>().HasKey(dt => dt.IdD);

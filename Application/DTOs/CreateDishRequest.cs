@@ -16,6 +16,7 @@ namespace Application.DTOs
         [Range(0.01, double.MaxValue, ErrorMessage = "El precio debe ser mayor a 0")]
         public double Price { get; init; }
         public string? ImageUrl { get; init; }
+        public bool avialible {  get; init; } 
         [Required]
         public int CategoryId { get; init; }
     }

@@ -1,5 +1,6 @@
 ﻿using Application.DTOs;
 using Application.Enums;
+using Application.Exceptions;
 using Application.Interfaces.InterfaceDish;
 using Application.Response;
 using Domain.Entities;
@@ -14,17 +15,23 @@ namespace Application.Service.ServiceDish
 {
     public class ServiceFilterDish : IServiceDishFilter
     {
-        public readonly IDishCommand _dishCommand;
-        public readonly IDishQuery _dishQuery;
+        private readonly IDishCommand _dishCommand;
+        private readonly IDishQuery _dishQuery;
+        private readonly ISeviceDishGet _servicesGet;
 
-        public ServiceFilterDish(IDishCommand dishCommand, IDishQuery dishQuery)
+        public ServiceFilterDish(IDishCommand dishCommand, IDishQuery dishQuery, ISeviceDishGet servicesGet)
         {
             _dishCommand = dishCommand;
             _dishQuery = dishQuery;
+            _servicesGet = servicesGet;
         }
 
         public async Task<List<CreateDishResponse>> FilterDishesByPriceRange(string? name, int? categoryId, SortOrder orderByAsc, bool? avialable)
         {
+            var di = await _servicesGet.GetAllDishes();
+            if ((name != null && di.Any(d => d.Name != name)) || (categoryId != null && di.Any(d => d.CategoryId != categoryId)))
+                throw new NotFoundException("No se encontraron platos con los criterios especificados.");
+
             var dishes = await _dishQuery.GetAllDishes();
 
             IEnumerable<Dish> filter = dishes;

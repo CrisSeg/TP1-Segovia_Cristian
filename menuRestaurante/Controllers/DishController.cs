@@ -26,16 +26,7 @@ namespace menuRestaurante.Controllers
         // Implement actions for the DishController here
         [HttpPost]
         public async Task<IActionResult> CreateDish(CreateDishRequest request)
-        {
-            var dishes = await _servicesGet.GetAllDishes();
-
-            if (request.NameDish == null)
-                return BadRequest("El nombre del plato es obligatorio");
-            if(request.Price <= 0)
-                return BadRequest("El precio debe ser mayor a 0");
-            if (dishes.Any(d => d.Name == request.NameDish))
-                return Conflict($"Ya existe un plato con el nombre: '{request.NameDish}'.");
-            
+        {   
             var result = await _service.createDish(request);
             return new JsonResult(result) { StatusCode = 201};
         }
@@ -43,9 +34,6 @@ namespace menuRestaurante.Controllers
         [HttpGet("dish")]
         public async Task<IActionResult> FilterDish([FromQuery] string? name, [FromQuery] int? categoryId, [FromQuery] SortOrder orderByAsc, [FromQuery] bool? avialable)
         {
-            var dishes = await _servicesGet.GetAllDishes();
-            if ((name != null && dishes.Any(d => d.Name != name)) || (categoryId != null && dishes.Any(d => d.CategoryId != categoryId)))
-                return NotFound("No se encontraron platos con los criterios especificados.");
             var result = await _serviceFilter.FilterDishesByPriceRange(name, categoryId, orderByAsc, avialable);
             return new JsonResult(result);
         }
@@ -53,14 +41,6 @@ namespace menuRestaurante.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDish(Guid id, UpdateDishRequest request)
         {
-            var dishes = await _servicesGet.GetAllDishes();
-            if (!dishes.Any(d => d.DishId == id))
-                return NotFound($"El plato con la ID '{id}' no exite.");
-            if (dishes.Any(d => d.Name == request.NameDish))
-                return Conflict($"Ya existe un plato con el nombre: '{request.NameDish}'.");
-            if (request.Price <= 0)
-                return BadRequest("El precio debe ser mayor a 0");
-
             var result = await _serviceUpdate.updateDish(id, request);
             return new JsonResult(result);
         }

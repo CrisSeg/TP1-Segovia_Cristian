@@ -25,23 +25,5 @@ namespace Infrastructure.Commands
             _context.Dishes.Add(dish);
             await _context.SaveChangesAsync();
         }
-
-        public async Task<UpdateDishRequest> UpdateDish(Guid id ,UpdateDishRequest updateDish)
-        {
-            var dish = await _context.Dishes.FindAsync(id);
-            if (dish is null)
-                throw new KeyNotFoundException($"No se encontró el plato con ID {id}");
-
-            dish.NameDish = updateDish.NameDish;
-            dish.Description = updateDish.Description;
-            dish.Price = updateDish.Price;
-            dish.CategoryId = updateDish.CategoryId;
-            dish.ImageUrl = updateDish.ImageUrl;
-            dish.Avialable = updateDish.IsAvailable;
-
-            await _context.SaveChangesAsync();
-
-            return updateDish;
-        }
     }
 }

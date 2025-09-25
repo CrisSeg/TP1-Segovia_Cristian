@@ -7,6 +7,7 @@ using Application.Service.ServiceDeliveryType;
 using Application.Service.ServiceDish;
 using Application.Service.ServiceStatus;
 using Infrastructure.Commands;
+using Infrastructure.Middlewore;
 using Infrastructure.Querys;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
@@ -23,10 +24,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Conexion a base de datos
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? throw new InvalidOperationException("La cadena de conexión 'DefaultConnection' no está configurada.");
-builder.Services.AddDbContext<AppContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
-
+builder.Services.AddDbContext<AppContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 //Custom Services creation
 builder.Services.AddScoped<IServicesDishCreate, ServiceDishCreate>();
@@ -73,7 +71,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseHttpsRedirection();
+app.UseMiddleware<Middlewore>();
+
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

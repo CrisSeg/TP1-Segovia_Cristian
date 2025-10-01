@@ -26,18 +26,20 @@ namespace Application.Service.ServiceDish
 
         public async Task<UpdateDishRequest> updateDish(Guid id, UpdateDishRequest request)
         {
-            var dishes = await _serviceDishGet.GetAllDishes();
+          /*  var dishes = await _serviceDishGet.GetAllDishes();
             if (!dishes.Any(d => d.DishId == id))
-                throw new NotFoundException($"El plato con la ID '{id}' no exite.");
+                throw new NotFoundException($"El plato con la ID '{id}' no existe.");
             if (dishes.Any(d => d.Name == request.NameDish))
-                throw new ConflictException($"Ya existe un plato con el nombre: '{request.NameDish}'.");
-            if (request.Price <= 0)
-                throw new BadRequestException("El precio debe ser mayor a 0");
-
+                throw new ConflictException($"Ya existe un plato con el nombre: '{request.NameDish}'.");*/
 
             var dish = await _dishQuery.GetDishById(id);
             if (dish is null)
-                throw new KeyNotFoundException($"No se encontró el plato con ID {id}");
+                throw new NotFoundException($"No se encontró el plato con ID {id}");
+            var di = await _dishQuery.GetAllDishes();
+            if (di.Any(d => d.NameDish == request.NameDish))
+                throw new ConflictException($"yaexite un plato con el nombre: '{request.NameDish}'");
+            if (request.Price <= 0)
+                throw new BadRequestException("El precio debe ser mayor a 0");
 
             dish.NameDish = request.NameDish;
             dish.Description = request.Description;

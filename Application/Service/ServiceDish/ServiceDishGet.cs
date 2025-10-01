@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.InterfaceDish;
+﻿using Application.Exceptions;
+using Application.Interfaces.InterfaceDish;
 using Application.Response;
 using Domain.Entities;
 using System;
@@ -40,6 +41,10 @@ namespace Application.Service.ServiceDish
 
         public async Task<CreateDishResponse> getDishById(Guid id)
         {
+            var di = await _dishQuery.GetAllDishes();
+            if (!di.Any(d => d.DishId == id))
+                throw new NotFoundException("Plato no encontrado");
+
             var dish = await _dishQuery.GetDishById(id);
 
             return await Task.FromResult(new CreateDishResponse(

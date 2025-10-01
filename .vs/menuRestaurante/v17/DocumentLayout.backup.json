@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\dtos\\createdishrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\dtos\\createdishrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\infrastructure\\middlewore\\middlewore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\middlewore\\middlewore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\servicedish\\servicedishcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\servicedish\\servicedishcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\serviceorder\\servicefilterorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\serviceorder\\servicefilterorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\servicedish\\servicedishget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\servicedish\\servicedishget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\serviceorder\\serviceordercreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\serviceorder\\serviceordercreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E59D1B-94B9-4B94-A97F-EE28C5F98620}|Domain\\Domain.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81E59D1B-94B9-4B94-A97F-EE28C5F98620}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\dtos\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\dtos\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\interfaces\\interfacesorder\\iservicecreateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\interfaces\\interfacesorder\\iservicecreateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\servicedish\\servicefilterdish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\servicedish\\servicefilterdish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\response\\createorderitemresponce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\response\\createorderitemresponce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\infrastructure\\querys\\dishquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\querys\\dishquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\infrastructure\\commands\\dishcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\commands\\dishcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\servicedish\\serviceupdatedish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\servicedish\\serviceupdatedish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\response\\createfilterorderresponce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\response\\createfilterorderresponce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,124 +53,155 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 311,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CreateDishRequest.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\DTOs\\CreateDishRequest.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\CreateDishRequest.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\DTOs\\CreateDishRequest.cs",
-              "RelativeToolTip": "Application\\DTOs\\CreateDishRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Title": "Middlewore.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Middlewore\\Middlewore.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Middlewore\\Middlewore.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Middlewore\\Middlewore.cs*",
+              "RelativeToolTip": "Infrastructure\\Middlewore\\Middlewore.cs*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:41:00.684Z",
+              "WhenOpened": "2025-10-01T22:34:28.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ServiceDishCreate.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceDishCreate.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\ServiceDish\\ServiceDishCreate.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceDishCreate.cs",
-              "RelativeToolTip": "Application\\Service\\ServiceDish\\ServiceDishCreate.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:40:24.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DishQuery.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Querys\\DishQuery.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Querys\\DishQuery.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Querys\\DishQuery.cs",
-              "RelativeToolTip": "Infrastructure\\Querys\\DishQuery.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:23:03.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceDishGet.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceDishGet.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\ServiceDish\\ServiceDishGet.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceDishGet.cs",
-              "RelativeToolTip": "Application\\Service\\ServiceDish\\ServiceDishGet.cs",
+              "Title": "ServiceFilterOrder.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceOrder\\ServiceFilterOrder.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\ServiceOrder\\ServiceFilterOrder.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceOrder\\ServiceFilterOrder.cs",
+              "RelativeToolTip": "Application\\Service\\ServiceOrder\\ServiceFilterOrder.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:15:48.268Z",
+              "WhenOpened": "2025-10-01T22:24:27.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ServiceFilterDish.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
-              "RelativeToolTip": "Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "Domain\\Entities\\Order.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:07:14.281Z",
+              "WhenOpened": "2025-10-01T22:23:43.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DishCommand.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Commands\\DishCommand.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Commands\\DishCommand.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Commands\\DishCommand.cs",
-              "RelativeToolTip": "Infrastructure\\Commands\\DishCommand.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "menuRestaurante\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "menuRestaurante\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:06:02.231Z",
+              "WhenOpened": "2025-09-28T18:41:48.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ServiceUpdateDish.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceUpdateDish.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\ServiceDish\\ServiceUpdateDish.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceUpdateDish.cs",
-              "RelativeToolTip": "Application\\Service\\ServiceDish\\ServiceUpdateDish.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwB4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:05:36.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DishController.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\DishController.cs",
-              "RelativeDocumentMoniker": "menuRestaurante\\Controllers\\DishController.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Controllers\\DishController.cs",
-              "RelativeToolTip": "menuRestaurante\\Controllers\\DishController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T03:05:09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Program.cs",
               "RelativeDocumentMoniker": "menuRestaurante\\Program.cs",
               "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Program.cs",
               "RelativeToolTip": "menuRestaurante\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAACLAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAlwEsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T04:26:47.766Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 289,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IServiceCreateOrder.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Interfaces\\InterfacesOrder\\IServiceCreateOrder.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\InterfacesOrder\\IServiceCreateOrder.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Interfaces\\InterfacesOrder\\IServiceCreateOrder.cs",
+              "RelativeToolTip": "Application\\Interfaces\\InterfacesOrder\\IServiceCreateOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T21:57:42.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServiceFilterDish.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
+              "RelativeToolTip": "Application\\Service\\ServiceDish\\ServiceFilterDish.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvxIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T02:25:02.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceOrderCreate.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceOrder\\ServiceOrderCreate.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\ServiceOrder\\ServiceOrderCreate.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceOrder\\ServiceOrderCreate.cs*",
+              "RelativeToolTip": "Application\\Service\\ServiceOrder\\ServiceOrderCreate.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwCIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T01:50:45.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateOrderRequest.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\DTOs\\CreateOrderRequest.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\CreateOrderRequest.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\DTOs\\CreateOrderRequest.cs",
+              "RelativeToolTip": "Application\\DTOs\\CreateOrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T22:05:35.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateFilterOrderResponce.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Response\\CreateFilterOrderResponce.cs",
+              "RelativeDocumentMoniker": "Application\\Response\\CreateFilterOrderResponce.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Response\\CreateFilterOrderResponce.cs",
+              "RelativeToolTip": "Application\\Response\\CreateFilterOrderResponce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T02:09:49.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateOrderItemResponce.cs",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Response\\CreateOrderItemResponce.cs",
+              "RelativeDocumentMoniker": "Application\\Response\\CreateOrderItemResponce.cs",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Response\\CreateOrderItemResponce.cs",
+              "RelativeToolTip": "Application\\Response\\CreateOrderItemResponce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T02:24:14.497Z",
               "EditorCaption": ""
             }
           ]

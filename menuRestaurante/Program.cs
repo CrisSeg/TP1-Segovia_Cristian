@@ -1,10 +1,13 @@
 using Application.Interfaces.InterfaceCategory;
 using Application.Interfaces.InterfaceDeliveryType;
 using Application.Interfaces.InterfaceDish;
+using Application.Interfaces.InterfaceOrderItem;
+using Application.Interfaces.InterfacesOrder;
 using Application.Interfaces.InterfaceStatus;
 using Application.Service.ServiceCategory;
 using Application.Service.ServiceDeliveryType;
 using Application.Service.ServiceDish;
+using Application.Service.ServiceOrder;
 using Application.Service.ServiceStatus;
 using Infrastructure.Commands;
 using Infrastructure.Middlewore;
@@ -46,6 +49,8 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 });
 
+// Services de deleteDish
+builder.Services.AddScoped<IServiceDeleteDish, ServiceDeleteDish>();
 
 // Implementaciones de Category
 // Custom Services get Category
@@ -60,6 +65,15 @@ builder.Services.AddScoped<IDeliveryTypeQuery1, DeliveryTypeQuery>();
 // Implementaciones de Status
 builder.Services.AddScoped<IServiceStatusGet, ServiceStatusGet>();
 builder.Services.AddScoped<IStatusQuery, StatusQuery>();
+
+// Implementaciones de Order
+builder.Services.AddScoped<IOrderCommand, OrderCommand>();
+builder.Services.AddScoped<IOrderQuery, OrderQuery>();
+builder.Services.AddScoped<IServiceCreateOrder, ServiceOrderCreate>();
+builder.Services.AddScoped<IServiceFilterOrder, ServiceFilterOrder>();
+
+// Implementaciones de ordenItem
+builder.Services.AddScoped<IOrderItemQuery, OrderItemQuery>();
 
 var app = builder.Build();
 

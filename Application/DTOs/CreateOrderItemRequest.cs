@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Application.DTOs
+{
+    public class CreateOrderItemRequest
+    {
+        [Required]
+        public Guid DishID { get; init; }
+        [Required]
+        public int Quantity { get; init; }
+        [Required]
+        public string Notes { get; init; }
+    }
+}

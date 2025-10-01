@@ -15,13 +15,15 @@ namespace menuRestaurante.Controllers
         private readonly ISeviceDishGet _servicesGet; 
         private readonly IServicesDishUpdate _serviceUpdate;
         private readonly IServiceDishFilter _serviceFilter;
+        private readonly IServiceDeleteDish _serviceDeleteDish;
 
-        public DishController(IServicesDishCreate service, ISeviceDishGet serviceGet, IServicesDishUpdate serviceUp,IServiceDishFilter serviceDishFilter )
+        public DishController(IServicesDishCreate service, ISeviceDishGet serviceGet, IServicesDishUpdate serviceUp,IServiceDishFilter serviceDishFilter, IServiceDeleteDish serviceDeleteDish)
         {
             _service = service;
             _servicesGet = serviceGet;
             _serviceUpdate = serviceUp;
             _serviceFilter = serviceDishFilter;
+            _serviceDeleteDish = serviceDeleteDish;
         }
         // Implement actions for the DishController here
         [HttpPost]
@@ -45,12 +47,18 @@ namespace menuRestaurante.Controllers
             return new JsonResult(result);
         }
 
-        [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetDishById(Guid id)
         {
            var result = await _servicesGet.getDishById(id);
            return new JsonResult(result);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteDish(Guid id)
+        {
+            var result = _serviceDeleteDish.DeleteDish(id);
+            return new JsonResult(result);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]

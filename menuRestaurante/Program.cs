@@ -71,6 +71,9 @@ builder.Services.AddScoped<IOrderCommand, OrderCommand>();
 builder.Services.AddScoped<IOrderQuery, OrderQuery>();
 builder.Services.AddScoped<IServiceCreateOrder, ServiceOrderCreate>();
 builder.Services.AddScoped<IServiceFilterOrder, ServiceFilterOrder>();
+builder.Services.AddScoped<IServiceUpdateOrderItem, ServiceUpdateOrderItem>();
+builder.Services.AddScoped<IServiceGetOrderByID, ServiceGetOrderById>();
+builder.Services.AddScoped<IServiceUpdateStatusOrder, ServiceUpdateStatusOrder>();
 
 // Implementaciones de ordenItem
 builder.Services.AddScoped<IOrderItemQuery, OrderItemQuery>();

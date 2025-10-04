@@ -3,6 +3,7 @@ using Application.Exceptions;
 using Application.Interfaces.InterfaceDish;
 using Application.Interfaces.InterfacesOrder;
 using Application.Response;
+using Application.Service.ServiceDish;
 using Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -35,18 +36,14 @@ namespace Application.Service.ServiceOrder
             double pr = 0.0;
 
             foreach (var item in o.items)
-            {
-                dish.TryGetValue(item.DishID, out var isAvialable);
-                if(isAvialable == false || !dish.ContainsKey(item.DishID))
+            { 
+                if(!dish.TryGetValue(item.DishID, out var isAvialable) || !isAvialable)
                     throw new BadRequestException("El plato especificado no existe o no esta disponible");
-            }
 
-            foreach(var item in o.items)
-            {
                 if (pre.TryGetValue(item.DishID, out var isPrice))
                     pr += Convert.ToDouble(item.Quantity) * isPrice;
             }
-
+  
             var now = DateTime.Now;
             var update = now.AddMinutes(35);
 
@@ -65,12 +62,14 @@ namespace Application.Service.ServiceOrder
             {
                 order.OrderItemsO.Add(new OrderItem
                 {
+                    DishId = item.DishID,
                     Quantity = item.Quantity,
                     Notes = item.Notes,
-                    CreateDate= now
-                }); 
+                    StatusId = 1,
+                    CreateDate = now
+                });
             }
-            
+
             await _command.addOrder(order);
 
             return new CreateOrderResponse(

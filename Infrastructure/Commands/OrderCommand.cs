@@ -20,7 +20,34 @@ namespace Infrastructure.Commands
 
         public async Task addOrder(Order order)
         {
-           _context.Orders.Add(order);
+            _context.Orders.Add(order);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task updateOrder(long orderId, int statuId)
+        {
+            var order = new Order
+            {
+                OrderId = orderId,
+                OStatusId = statuId,
+            };
+
+            _context.Orders.Attach(order);
+            _context.Entry(order).Property(o => o.OStatusId).IsModified = true;
+
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task updateOrderItem(long orderItemId, int statuId)
+        {
+            var orderItem = new OrderItem
+            {
+                OrderItemId = orderItemId,
+                StatusId = statuId,
+            };
+
+            _context.orderItems.Attach(orderItem);
+            _context.Entry(orderItem).Property(oi => oi.StatusId).IsModified= true;
             await _context.SaveChangesAsync();
         }
     }

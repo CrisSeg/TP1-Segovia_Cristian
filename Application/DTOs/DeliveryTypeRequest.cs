@@ -12,6 +12,6 @@ namespace Application.DTOs
         [Required]
         public int deliveryId { get; init; }
         [Required]
-        public string to { get; init; }
+        public string to { get; init; } = string.Empty;
     }
 }

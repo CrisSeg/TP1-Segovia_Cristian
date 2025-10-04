@@ -10,5 +10,7 @@ namespace Application.Interfaces.InterfacesOrder
     public interface IOrderCommand
     {
         Task addOrder(Order order);
+        Task updateOrder(long orderId, int statuId);
+        Task updateOrderItem(long orderItemId, int statuId);
     }
 }

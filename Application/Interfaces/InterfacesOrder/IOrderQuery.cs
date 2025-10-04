@@ -10,6 +10,7 @@ namespace Application.Interfaces.InterfacesOrder
     public interface IOrderQuery
     {
         Task<List<Order>> getAll();
+        Task<Order> GetOrderById(long id);
         Task<string?> getStatusById(int id);
         Task<string?> getDeliveryTipeId(int id);
     }

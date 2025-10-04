@@ -7,13 +7,9 @@ using System.Threading.Tasks;
 
 namespace Application.DTOs
 {
-    public class CreateOrderItemRequest
+    public class UpdateStatusOrderRequest
     {
         [Required]
-        public Guid DishID { get; init; }
-        [Required]
-        public int Quantity { get; init; }
-        [Required]
-        public string Notes { get; init; } = string.Empty;
+        public int status { get; init; }
     }
 }

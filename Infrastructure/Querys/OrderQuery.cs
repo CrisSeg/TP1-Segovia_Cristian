@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces.InterfacesOrder;
+using Application.Response;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,9 +22,27 @@ namespace Infrastructure.Querys
 
         public async Task<List<Order>> getAll()
             => await _context.Orders.AsNoTracking()
+                .Include(o => o.OrderItemsO)
+                    .ThenInclude(oi => oi.Dish)
+                .Include(o => o.OrderItemsO)
+                    .ThenInclude(oi => oi.Status)
                 .Include(o => o.OverallStatus)
                 .Include(o => o.deliveryType)
                 .ToListAsync();
+
+        public async Task<Order> GetOrderById(long id)
+        {
+            Order? order = await _context.Orders.AsNoTracking()
+                                .Include(o => o.OrderItemsO)
+                                    .ThenInclude(oi => oi.Dish)
+                                .Include(o => o.OrderItemsO)
+                                    .ThenInclude(oi => oi.Status)
+                                .Include(o => o.OverallStatus)
+                                .Include(o => o.deliveryType)
+                                .FirstOrDefaultAsync(o => o.OrderId == id);
+            return order;
+        }
+
 
         public async Task<string?> getStatusById(int id)
             => await _context.Orders.AsNoTracking()

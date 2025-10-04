@@ -12,7 +12,7 @@ namespace Application.DTOs
         [Required]
         public List<CreateOrderItemRequest> items { get; init; } = new();
         [Required]
-        public DeliveryTypeRequest delivery { get; init; }
+        public DeliveryTypeRequest delivery { get; init; } = default!;
         [Required]
         public string notes { get; init; } = string.Empty;
     }

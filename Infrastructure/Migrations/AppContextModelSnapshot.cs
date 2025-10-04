@@ -183,6 +183,11 @@ namespace Infrastructure.Migrations
                         .HasMaxLength(2083)
                         .HasColumnType("nvarchar(2083)");
 
+                    b.Property<bool>("IsDelete")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
                     b.Property<string>("NameDish")
                         .IsRequired()
                         .HasMaxLength(255)

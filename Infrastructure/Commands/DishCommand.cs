@@ -25,5 +25,18 @@ namespace Infrastructure.Commands
             _context.Dishes.Add(dish);
             await _context.SaveChangesAsync();
         }
+
+        public async Task DeleteDish(Guid id, bool isDelete)
+        {
+            var dish = new Dish
+            {
+                DishId = id,
+                IsDelete = isDelete
+            };
+
+            _context.Dishes.Attach(dish);
+            _context.Entry(dish).Property(d => d.IsDelete).IsModified = true;
+            await _context.SaveChangesAsync();
+        }
     }
 }

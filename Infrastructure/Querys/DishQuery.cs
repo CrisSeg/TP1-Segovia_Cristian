@@ -43,7 +43,9 @@ namespace Infrastructure.Querys
 
         public async Task<List<Dish>> GetFilterDish(string? name, int? categoryId, SortOrder orderByAsc, bool? avialable)
         {
-            return  await _context.Dishes.AsNoTracking().Include(d => d.Category).ToListAsync();
+            return  await _context.Dishes.AsNoTracking()
+                        .Include(d => d.Category)
+                        .ToListAsync();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Application.Response;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Application.Interfaces.InterfaceDish
 {
     public interface IServiceDeleteDish
     {
-        Task DeleteDish(Guid id);
+        Task<DeleteDishResponce> DeleteDish(Guid id);
     }
 }

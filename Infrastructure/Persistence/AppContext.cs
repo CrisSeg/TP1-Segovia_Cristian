@@ -22,6 +22,12 @@ namespace Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Al insertar un dish la flag de isActive es true
+            modelBuilder.Entity<Dish>().Property(d => d.IsDelete).HasDefaultValue(false);
+            // Oculta los dish que tengan isActive false no se muestren
+            modelBuilder.Entity<Dish>().HasQueryFilter(d => !d.IsDelete);
+
+
             base.OnModelCreating(modelBuilder);
 
             //Entidad Dish

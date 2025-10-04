@@ -13,8 +13,8 @@ using AppContext = Infrastructure.Persistence.AppContext;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20250925030145_CambioDeBaseDeDatos")]
-    partial class CambioDeBaseDeDatos
+    [Migration("20251004145139_IsDeleteImplemention")]
+    partial class IsDeleteImplemention
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -185,6 +185,11 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasMaxLength(2083)
                         .HasColumnType("nvarchar(2083)");
+
+                    b.Property<bool>("IsDelete")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("NameDish")
                         .IsRequired()

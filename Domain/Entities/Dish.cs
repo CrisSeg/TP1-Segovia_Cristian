@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.ClaseAbstacta;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Dish
+    public class Dish : IsDeleteEntitties
     {
         public Guid DishId { get; set; }
-
         public string NameDish { get; set; } = null!;
         public string Description { get; set; } = null!;
         public double Price { get; set; }

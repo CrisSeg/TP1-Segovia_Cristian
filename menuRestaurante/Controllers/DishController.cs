@@ -54,12 +54,12 @@ namespace menuRestaurante.Controllers
            return new JsonResult(result);
         }
 
-       /* [HttpDelete("{id}")]
+       [HttpPatch("{id}")]
         public async Task<IActionResult> DeleteDish(Guid id)
         {
-            var result = _serviceDeleteDish.DeleteDish(id);
+            var result = await _serviceDeleteDish.DeleteDish(id);
             return new JsonResult(result);
-        }*/
+        }
 
         [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("category/{id}")]

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace Application.Interfaces.InterfaceOrderItem
 {
     public interface IOrderItemQuery
     {
+        Task<List<OrderItem>> getAllItems();
+        Task<int> countDishByOrderItem(Guid id);
         Task<string?> getStatusId(int id);
         Task<string?> getDishId(Guid id);
         Task<string?> getDishImage(Guid id);

@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces.InterfaceOrderItem;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,18 @@ namespace Infrastructure.Querys
         public OrderItemQuery(AppContext context)
         {
             _context = context;
+        }
+
+        public async Task<List<OrderItem>> getAllItems()
+            => await _context.orderItems.AsNoTracking()
+                    .Include(oi => oi.Dish)
+                    .Include(oi => oi.Status)
+                    .ToListAsync();
+
+        public async Task<int> countDishByOrderItem(Guid id)
+        {
+            int count = await _context.orderItems.CountAsync(oi => oi.DishId == id);
+            return count;
         }
 
         public async Task<string?> getDishId(Guid id)

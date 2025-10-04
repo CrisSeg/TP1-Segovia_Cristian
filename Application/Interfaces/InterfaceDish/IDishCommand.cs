@@ -12,5 +12,6 @@ namespace Application.Interfaces.InterfaceDish
     public interface IDishCommand
     {
         Task AddDish(Dish dish);
+        Task DeleteDish(Guid id, bool isActive);
     }
 }

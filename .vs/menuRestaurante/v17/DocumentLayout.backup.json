@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\infrastructure\\persistence\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\infrastructure\\migrations\\20251004145139_isdeleteimplemention.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70849BAD-2DBB-46E4-8BAC-AD06AABBF5F5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20251004145139_isdeleteimplemention.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\application\\service\\servicedish\\servicedeletedish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E74D6B-15F2-4E36-8254-FD1B19C22DE1}|Application\\Application.csproj|solutionrelative:application\\service\\servicedish\\servicedeletedish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|c:\\users\\nico_\\source\\repos\\menurestaurante\\menurestaurante\\menurestaurante.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D59403D8-2EE0-4ED4-AC3F-43102C9391F5}|menuRestaurante\\menuRestaurante.csproj|solutionrelative:menurestaurante\\menurestaurante.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 311,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20251004145139_IsDeleteImplemention.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Migrations\\20251004145139_IsDeleteImplemention.Designer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251004145139_IsDeleteImplemention.Designer.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Migrations\\20251004145139_IsDeleteImplemention.Designer.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251004145139_IsDeleteImplemention.Designer.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwAgAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T14:52:36.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceDeleteDish.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceDeleteDish.cs",
-              "RelativeDocumentMoniker": "Application\\Service\\ServiceDish\\ServiceDeleteDish.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Application\\Service\\ServiceDish\\ServiceDeleteDish.cs",
-              "RelativeToolTip": "Application\\Service\\ServiceDish\\ServiceDeleteDish.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T14:33:25.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppContext.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Persistence\\AppContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\AppContext.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\Infrastructure\\Persistence\\AppContext.cs*",
-              "RelativeToolTip": "Infrastructure\\Persistence\\AppContext.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBsAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T03:29:15.674Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "menuRestaurante\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Properties\\launchSettings.json",
+              "RelativeToolTip": "menuRestaurante\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-15T03:41:51.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Program.cs",
-              "RelativeDocumentMoniker": "menuRestaurante\\Program.cs",
-              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\Program.cs",
-              "RelativeToolTip": "menuRestaurante\\Program.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEsAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T04:26:47.766Z",
+              "DocumentIndex": 1,
+              "Title": "menuRestaurante.http",
+              "DocumentMoniker": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\menuRestaurante.http",
+              "RelativeDocumentMoniker": "menuRestaurante\\menuRestaurante.http",
+              "ToolTip": "C:\\Users\\nico_\\source\\repos\\menuRestaurante\\menuRestaurante\\menuRestaurante.http",
+              "RelativeToolTip": "menuRestaurante\\menuRestaurante.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-15T03:41:23.324Z",
               "EditorCaption": ""
             }
           ]

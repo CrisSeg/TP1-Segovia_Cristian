@@ -28,9 +28,12 @@ namespace Application.Service.ServiceDish
 
         public async Task<List<CreateDishResponse>> FilterDishesByPriceRange(string? name, int? categoryId, SortOrder orderByAsc, bool? avialable)
         {
-            var di = await _servicesGet.GetAllDishes();
-            if ((name != null && di.Any(d => d.Name != name)) || (categoryId != null && di.Any(d => d.CategoryId != categoryId)))
+            /*
+            var di = await _dishQuery.GetAllDishes();
+
+            if ((name != null && di.Any(d => d.NameDish != name)) || (categoryId != null && di.Any(d => d.CategoryId != categoryId)))
                 throw new NotFoundException("No se encontraron platos con los criterios especificados.");
+            */
 
             var dishes = await _dishQuery.GetAllDishes();
 
@@ -57,6 +60,9 @@ namespace Application.Service.ServiceDish
             filter = orderByAsc == SortOrder.ASC
                 ? filter.OrderBy(dish => dish.Price)
                 : filter.OrderByDescending(dish => dish.Price);
+
+            if (!filter.Any())
+                throw new NotFoundException("No se encontraton platos con los criterios especificados");
 
             return filter.Select(d => new CreateDishResponse(
                     DishId: d.DishId,

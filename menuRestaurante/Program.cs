@@ -78,6 +78,24 @@ builder.Services.AddScoped<IServiceUpdateStatusOrder, ServiceUpdateStatusOrder>(
 // Implementaciones de ordenItem
 builder.Services.AddScoped<IOrderItemQuery, OrderItemQuery>();
 
+//configuracion CORS
+// habilitamos el CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy.WithOrigins("http://127.0.0.1:5500")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -88,6 +106,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseMiddleware<Middlewore>();
+
+app.UseCors("AllowFrontend");
 
 app.UseHttpsRedirection();
 

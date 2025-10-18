@@ -32,7 +32,7 @@ namespace menuRestaurante.Controllers
             return new JsonResult(result) { StatusCode = 201 };
         }
 
-        [HttpGet("order")]
+        [HttpGet]
         public async Task<IActionResult> filterOrder([FromQuery] DateTime? inicio, [FromQuery] DateTime? fin, [FromQuery] int? statusId)
         {
             var result = await _filterOrder.filterOrder(inicio, fin, statusId);

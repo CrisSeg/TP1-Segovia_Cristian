@@ -33,7 +33,7 @@ namespace menuRestaurante.Controllers
             return new JsonResult(result) { StatusCode = 201};
         }
 
-        [HttpGet("dish")]
+        [HttpGet]
         public async Task<IActionResult> FilterDish([FromQuery] string? name, [FromQuery] int? categoryId, [FromQuery] SortOrder orderByAsc, [FromQuery] bool? avialable)
         {
             var result = await _serviceFilter.FilterDishesByPriceRange(name, categoryId, orderByAsc, avialable);

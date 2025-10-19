@@ -1,5 +1,7 @@
-﻿using Application.Interfaces.InterfacesOrder;
+﻿using Application.DTOs;
+using Application.Interfaces.InterfacesOrder;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +26,7 @@ namespace Infrastructure.Commands
             await _context.SaveChangesAsync();
         }
 
-        public async Task updateOrder(long orderId, int statuId)
+        public async Task updateOrderStatus(long orderId, int statuId)
         {
             var order = new Order
             {
@@ -38,7 +40,13 @@ namespace Infrastructure.Commands
             await _context.SaveChangesAsync();
         }
 
-        public async Task updateOrderItem(long orderItemId, int statuId)
+        public async Task updateListOrderItems(Order order)
+        {
+            _context.Orders.Update(order);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task updateOrderItemStatus(long orderItemId, int statuId)
         {
             var orderItem = new OrderItem
             {

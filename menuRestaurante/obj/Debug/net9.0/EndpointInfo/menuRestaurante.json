@@ -58,9 +58,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Dish/dish": {
+      },
       "get": {
         "tags": [
           "Dish"

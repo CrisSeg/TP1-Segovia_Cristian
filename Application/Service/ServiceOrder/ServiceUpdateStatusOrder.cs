@@ -34,11 +34,11 @@ namespace Application.Service.ServiceOrder
             }
             if (s.status <= 0 || s.status >= 7)
                 throw new BadRequestException("El estado especificado no es valido");
-            
-          
-            await _command.updateOrder(order.OrderId, s.status);
 
-            await _command.updateOrderItem(itemId, s.status);
+            await _command.updateOrderItemStatus(itemId, s.status);
+
+            if(order.OrderItemsO.All(oi => oi.StatusId == 2))
+                await _command.updateOrderStatus(order.OrderId, s.status);
 
             return new CreateOrderResponse(
                     order.OrderId, order.Price, order.CreateDate

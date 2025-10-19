@@ -16,11 +16,13 @@ namespace Application.Service.ServiceOrder
 {
     public class ServiceUpdateOrderItem : IServiceUpdateOrderItem
     {
+        private readonly IOrderCommand _command;
         private readonly IOrderQuery _orderQuery;
-        private readonly IDishQuery _dishQuery; 
+        private readonly IDishQuery _dishQuery;
 
-        public ServiceUpdateOrderItem(IOrderQuery orderQuery, IDishQuery dishQuery)
+        public ServiceUpdateOrderItem(IOrderCommand ordercommand, IOrderQuery orderQuery, IDishQuery dishQuery)
         {
+            _command = ordercommand;
             _orderQuery = orderQuery;
             _dishQuery = dishQuery;
         }
@@ -37,6 +39,9 @@ namespace Application.Service.ServiceOrder
 
             if (orderById.OStatusId != 1)
                 throw new BadRequestException("No se puede modificar una orden que ya está en preparación");
+
+            if (orderById.OrderItemsO == null)
+                orderById.OrderItemsO = new List<OrderItem>();
 
             foreach (var item in items)
             {
@@ -55,8 +60,10 @@ namespace Application.Service.ServiceOrder
                         CreateDate = DateTime.Now
                     });
                 else
+                {
                     exist.Quantity = item.Quantity;
                     exist.Notes = item.Notes;
+                }
 
                 if (dishPrice.TryGetValue(item.DishID, out double isPrice))
                     price += Convert.ToDouble(item.Quantity) * isPrice;
@@ -64,6 +71,8 @@ namespace Application.Service.ServiceOrder
 
             orderById.Price = price;
             orderById.UpdateDate = DateTime.Now.AddMinutes(35);
+
+            await _command.updateListOrderItems(orderById);
 
             return new UpdateOrderByItemResponse(
                     orderById.OrderId, orderById.Price, orderById.UpdateDate

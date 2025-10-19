@@ -70,7 +70,7 @@ namespace menuRestaurante.Controllers
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
-        [HttpGet]
+        [HttpGet("allDishes")]
         public async Task<IActionResult> GetAllDishes()
         {
             var result = await _servicesGet.GetAllDishes();

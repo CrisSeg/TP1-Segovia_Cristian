@@ -28,24 +28,24 @@ namespace Application.Service.ServiceDish
         {
             var dishes = await _servicesGet.GetAllDishes();
 
-            if (request.NameDish == null)
+            if (request.name == null)
                 throw new BadRequestException("El nombre no puede ser vacio.");
-            if (request.Price <= 0)
+            if (request.price <= 0)
                 throw new BadRequestException("El precio debe ser mayor a 0");
-            if (dishes.Any(d => d.Name == request.NameDish))
-                throw new ConflictException($"Ya existe un plato con el nombre: '{request.NameDish}'.");
+            if (dishes.Any(d => d.name == request.name))
+                throw new ConflictException($"Ya existe un plato con el nombre: '{request.name}'.");
 
 
             var now = DateTime.UtcNow;  
 
             var dish = new Dish
             {
-                NameDish = request.NameDish,
-                Description = request.Description ?? string.Empty, 
-                Price = request.Price,
-                Avialable = request.avialible,
-                ImageUrl = request.ImageUrl ?? string.Empty,
-                CategoryId = request.CategoryId,
+                NameDish = request.name,
+                Description = request.description ?? string.Empty, 
+                Price = request.price,
+                Avialable = true,
+                ImageUrl = request.image ?? string.Empty,
+                CategoryId = request.category,
                 CreateDate = now,
                 UpdateDate = now,
             };
@@ -55,7 +55,18 @@ namespace Application.Service.ServiceDish
             var CategoryName = await _dishQuery.GetCategoryById(dish.CategoryId) ?? string.Empty;
 
             return new CreateDishResponse(
-                dish.DishId, dish.NameDish, dish.Description, dish.Price, dish.Avialable, dish.ImageUrl, dish.CreateDate, dish.UpdateDate, dish.CategoryId, CategoryName
+                id: dish.DishId, 
+                name: dish.NameDish, 
+                description: dish.Description, 
+                price: dish.Price, 
+                new CreateDishCategory(
+                        id: dish.CategoryId,
+                        name: CategoryName
+                    ),  
+                image: dish.ImageUrl, 
+                isActive: dish.Avialable, 
+                createdAt: dish.CreateDate,
+                updatedAt: dish.UpdateDate
             );
         }
     }

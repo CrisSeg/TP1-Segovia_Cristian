@@ -10,10 +10,10 @@ namespace Application.DTOs
     public class CreateOrderItemRequest
     {
         [Required]
-        public Guid DishID { get; init; }
+        public Guid id { get; init; }
         [Required]
-        public int Quantity { get; init; }
+        public int quantity { get; init; }
         [Required]
-        public string Notes { get; init; } = string.Empty;
+        public string notes { get; init; } = string.Empty;
     }
 }

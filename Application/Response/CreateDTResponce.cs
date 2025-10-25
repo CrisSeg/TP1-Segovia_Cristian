@@ -8,7 +8,7 @@ namespace Application.Response
 {
     public record CreateDTResponce
     (
-        int IdD,
-        string NameDeliveryT
+        int id,
+        string name
     );
 }

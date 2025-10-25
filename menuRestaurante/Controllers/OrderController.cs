@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace menuRestaurante.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase
     {
@@ -47,7 +47,7 @@ namespace menuRestaurante.Controllers
         }
 
         [HttpPatch]
-        public async Task<IActionResult> updateOrderItem([FromQuery] long id, [FromBody] List<UpdateOrderItemRequest> items)
+        public async Task<IActionResult> updateOrderItem([FromQuery] long id, [FromBody] List<CreateOrderItemRequest> items)
         {
             var result = await _updateOrderItem.updateOrderItemList(id, items);
             return new JsonResult(result);

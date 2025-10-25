@@ -23,8 +23,8 @@ namespace Application.Service.ServiceStatus
 
             var responce = statuses.Select(s => new CreateStatusResponce
             (
-                Id : s.Id,
-                NameStatus : s.NameStatus
+                id : s.Id,
+                name : s.NameStatus
             )).ToList();
 
             return responce;

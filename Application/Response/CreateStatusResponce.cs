@@ -8,7 +8,7 @@ namespace Application.Response
 {
     public record CreateStatusResponce
     (
-        int Id,
-        string NameStatus
+        int id,
+        string name
     );
 }

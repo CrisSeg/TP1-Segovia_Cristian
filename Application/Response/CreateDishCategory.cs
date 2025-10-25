@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Application.Response
 {
-    public record CreateCategoryResponse
+    public record CreateDishCategory
     (
-        int Id,
-        string name,
-        string description,
-        int order
+        int id,
+        string name
     );
 }

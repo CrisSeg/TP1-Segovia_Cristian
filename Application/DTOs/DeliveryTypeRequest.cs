@@ -10,7 +10,7 @@ namespace Application.DTOs
     public class DeliveryTypeRequest
     {
         [Required]
-        public int deliveryId { get; init; }
+        public int id { get; init; }
         [Required]
         public string to { get; init; } = string.Empty;
     }

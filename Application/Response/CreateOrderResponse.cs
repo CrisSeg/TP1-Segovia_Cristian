@@ -10,8 +10,8 @@ namespace Application.Response
 {
     public record CreateOrderResponse
     (
-        long orderId,
-        double Price,
-        DateTime createDate
+        long orderNumber,
+        double totalAmount,
+        DateTime createdAt
     );
 }

@@ -7,13 +7,21 @@ using System.Threading.Tasks;
 namespace Application.Response
 {
     public record CreateOrderItemResponce(
-            long orderItemId,
+            long id,
             int quantity,
             string notes,
-            int oStatusId,
-            string oStatus,
-            Guid oDishId,
-            string oDishName,
-            string oDishImage
+            CreateOIStatus status,
+            CreateOIDish dish
+        );
+
+    public record CreateOIStatus(
+            int id,
+            string name
+        );
+
+    public record CreateOIDish(
+            Guid id,
+            string name,
+            string image
         );
 }

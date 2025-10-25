@@ -8,16 +8,14 @@ using System.Threading.Tasks;
 namespace Application.Response
 {
     public record CreateFilterOrderResponce(
-            long orderId,
-            double price,
+            long orderNumber,
+            double totalAmount,
             string deliveryTo,
             string notes,
-            int statusId,
-            string status,
-            int deliveryId,
-            string deliveryType,
+            CreateStatusOrder status,
+            CreateDeliveryOrder deliveryType,
             List<CreateOrderItemResponce> orderItems,
-            DateTime createDate,
-            DateTime updateDate
+            DateTime createdAt,
+            DateTime updatedAt
         );
 }

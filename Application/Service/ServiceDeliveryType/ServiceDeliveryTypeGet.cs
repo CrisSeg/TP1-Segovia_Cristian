@@ -22,8 +22,8 @@ namespace Application.Service.ServiceDeliveryType
             var deliveryTypes = await _deliveryTypeQuery.GetAllDeliveryTypes();
 
             var response = deliveryTypes.Select(dt => new CreateDTResponce(
-                IdD : dt.IdD,
-                NameDeliveryT : dt.NameDeliveryT
+                id : dt.IdD,
+                name : dt.NameDeliveryT
             )).ToList();
 
             return response;

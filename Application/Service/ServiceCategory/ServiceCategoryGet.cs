@@ -24,9 +24,9 @@ namespace Application.Service.ServiceCategory
 
             var response = categories.Select(category => new CreateCategoryResponse(
                 Id: category.Id,
-                NameCategory: category.NameCategory,
-                Description: category.Description,
-                Order : category.Order
+                name: category.NameCategory,
+                description: category.Description,
+                order : category.Order
             )).ToList();
 
             return response;

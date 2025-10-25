@@ -25,16 +25,18 @@ namespace Application.Service.ServiceDish
         {
             var dishes = await _dishQuery.GetAllDishes();
             var response = dishes.Select(dish => new CreateDishResponse(
-                DishId: dish.DishId,
-                Name: dish.NameDish,
-                Description: dish.Description,
-                Price: dish.Price,
-                Avialable: dish.Avialable,
-                ImageUrl: dish.ImageUrl,
-                CreateDate: dish.CreateDate,
-                UpdateDate: dish.UpdateDate,
-                CategoryId: dish.CategoryId,
-                CategoryName: dish.Category.NameCategory
+                id: dish.DishId,
+                name: dish.NameDish,
+                description: dish.Description,
+                price: dish.Price,
+                new CreateDishCategory(
+                     id: dish.CategoryId,
+                     name: dish.Category.NameCategory
+                  ),
+                image: dish.ImageUrl,
+                isActive: dish.Avialable,
+                createdAt: dish.CreateDate,
+                updatedAt: dish.UpdateDate
             )).ToList();
             return response;
         }
@@ -48,16 +50,18 @@ namespace Application.Service.ServiceDish
             var dish = await _dishQuery.GetDishById(id);
 
             return await Task.FromResult(new CreateDishResponse(
-                DishId: dish.DishId,
-                Name: dish.NameDish,
-                Description: dish.Description,
-                Price: dish.Price,
-                Avialable: dish.Avialable,
-                ImageUrl: dish.ImageUrl,
-                CreateDate: dish.CreateDate,
-                UpdateDate: dish.UpdateDate,
-                CategoryId: dish.CategoryId,
-                CategoryName: dish.Category.NameCategory
+                id: dish.DishId,
+                name: dish.NameDish,
+                description: dish.Description,
+                price: dish.Price,
+                new CreateDishCategory(
+                    id: dish.CategoryId,
+                    name: dish.Category.NameCategory
+                ),
+                image: dish.ImageUrl,
+                isActive: dish.Avialable,
+                createdAt: dish.CreateDate,
+                updatedAt: dish.UpdateDate
             ));
         }
 

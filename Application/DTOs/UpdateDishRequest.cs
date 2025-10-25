@@ -10,15 +10,14 @@ namespace Application.DTOs
     public class UpdateDishRequest
     {
         [Required]
-        public string NameDish { get; init; } = default!;
+        public string name { get; init; } = default!;
         [MaxLength(500)]
-        public string? Description { get; init; }
+        public string? description { get; init; }
         [Range(0.01, double.MaxValue, ErrorMessage = "El precio debe ser mayor a 0")]
-        public double Price { get; init; }
-        public string? ImageUrl { get; init; }
+        public double price { get; init; }
+        public int category { get; init; }
+        public string? image { get; init; }
         [Required]
-        public int CategoryId { get; init; }
-        [Required]
-        public bool IsAvailable { get; init; }
+        public bool IsActive { get; init; }
     }
 }

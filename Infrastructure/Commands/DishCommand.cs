@@ -30,12 +30,12 @@ namespace Infrastructure.Commands
         {
             var d = await _context.Dishes.FindAsync(id);
 
-            d.NameDish = dish.NameDish;
-            d.Description = dish.Description;
-            d.Price = dish.Price;
-            d.CategoryId = dish.CategoryId;
-            d.ImageUrl = dish.ImageUrl;
-            d.Avialable = dish.IsAvailable;
+            d.NameDish = dish.name;
+            d.Description = dish.description;
+            d.Price = dish.price;
+            d.CategoryId = dish.category;
+            d.ImageUrl = dish.image;
+            d.Avialable = dish.IsActive;
 
             _context.Dishes.Update(d);
             await _context.SaveChangesAsync();

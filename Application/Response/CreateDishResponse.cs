@@ -8,15 +8,14 @@ namespace Application.Response
 {
     public record CreateDishResponse
     (
-        Guid DishId,
-        string Name,
-        string? Description,
-        double Price,
-        bool Avialable,
-        string? ImageUrl,
-        DateTime CreateDate,
-        DateTime UpdateDate,
-        int CategoryId,
-        string CategoryName
+        Guid id,
+        string name,
+        string? description,
+        double price,
+        CreateDishCategory Category,
+        string? image,
+        bool isActive,
+        DateTime createdAt,
+        DateTime updatedAt
     );
 }

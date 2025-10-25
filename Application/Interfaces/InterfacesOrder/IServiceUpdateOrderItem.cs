@@ -10,6 +10,6 @@ namespace Application.Interfaces.InterfacesOrder
 {
     public interface IServiceUpdateOrderItem
     {
-        Task<UpdateOrderByItemResponse> updateOrderItemList(long id, List<UpdateOrderItemRequest> items);
+        Task<UpdateOrderByItemResponse> updateOrderItemList(long id, List<CreateOrderItemRequest> items);
     }
 }

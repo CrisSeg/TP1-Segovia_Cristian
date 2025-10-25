@@ -36,12 +36,12 @@ namespace Application.Service.ServiceOrder
             double pr = 0.0;
 
             foreach (var item in o.items)
-            { 
-                if(!dish.TryGetValue(item.DishID, out var isAvialable) || !isAvialable)
+            {
+                if(!dish.TryGetValue(item.id, out var isAvialable) || !isAvialable)
                     throw new BadRequestException("El plato especificado no existe o no esta disponible");
 
-                if (pre.TryGetValue(item.DishID, out var isPrice))
-                    pr += Convert.ToDouble(item.Quantity) * isPrice;
+                if (pre.TryGetValue(item.id, out var isPrice))
+                    pr += Convert.ToDouble(item.quantity) * isPrice;
             }
   
             var now = DateTime.Now;
@@ -55,16 +55,16 @@ namespace Application.Service.ServiceOrder
                 CreateDate = now,
                 UpdateDate = update,
                 OStatusId = 1,
-                DeliveryTypeId = o.delivery.deliveryId
+                DeliveryTypeId = o.delivery.id
             };
 
             foreach (var item in o.items)
             {
                 order.OrderItemsO.Add(new OrderItem
                 {
-                    DishId = item.DishID,
-                    Quantity = item.Quantity,
-                    Notes = item.Notes,
+                    DishId = item.id,
+                    Quantity = item.quantity,
+                    Notes = item.notes,
                     StatusId = 1,
                     CreateDate = now
                 });

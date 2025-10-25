@@ -28,26 +28,34 @@ namespace Application.Service.ServiceOrder
             var ord = await _orderQuery.GetOrderById(id);
 
             return await Task.FromResult(new CreateFilterOrderResponce(
-                    orderId: ord.OrderId,
-                    price: ord.Price,
+                    orderNumber: ord.OrderId,
+                    totalAmount: ord.Price,
                     deliveryTo: ord.DeliveryTo,
                     notes: ord.Notes,
-                    statusId: ord.OStatusId,
-                    status: ord.OverallStatus.NameStatus,
-                    deliveryId: ord.DeliveryTypeId,
-                    deliveryType: ord.deliveryType.NameDeliveryT,
+                    status: new CreateStatusOrder(
+                            id: ord.OStatusId,
+                            name: ord.OverallStatus.NameStatus
+                        ),
+                    deliveryType: new CreateDeliveryOrder(
+                            id: ord.DeliveryTypeId,
+                            name: ord.deliveryType.NameDeliveryT
+                        ),
                     orderItems: ord.OrderItemsO.Select(oi => new CreateOrderItemResponce(
-                            orderItemId: oi.OrderId,
+                            id: oi.OrderId,
                             quantity: oi.Quantity,
                             notes: oi.Notes,
-                            oStatusId: oi.StatusId,
-                            oStatus: oi.Status.NameStatus,
-                            oDishId: oi.DishId,
-                            oDishName: oi.Dish.NameDish,
-                            oDishImage: oi.Dish.ImageUrl
+                            status: new CreateOIStatus(
+                                    id: oi.StatusId,
+                                    name: oi.Status.NameStatus
+                                ),
+                            dish: new CreateOIDish(
+                                    id: oi.DishId,
+                                    name: oi.Dish.NameDish,
+                                    image: oi.Dish.ImageUrl
+                                )
                         )).ToList(),
-                    createDate : ord.CreateDate,
-                    updateDate : ord.UpdateDate
+                    createdAt: ord.CreateDate,
+                    updatedAt: ord.UpdateDate
                 ));
         }
     }

@@ -48,26 +48,34 @@ namespace Application.Service.ServiceOrder
             }
 
             return filter.Select(o => new CreateFilterOrderResponce(
-                    orderId: o.OrderId,
-                    price: o.Price,
+                    orderNumber: o.OrderId,
+                    totalAmount: o.Price,
                     deliveryTo: o.DeliveryTo,
                     notes: o.Notes,
-                    statusId: o.OStatusId,
-                    status: o.OverallStatus.NameStatus,
-                    deliveryId: o.DeliveryTypeId,
-                    deliveryType: o.deliveryType.NameDeliveryT,
+                    status: new CreateStatusOrder(
+                            id: o.OStatusId,
+                            name: o.OverallStatus.NameStatus
+                        ),
+                    deliveryType: new CreateDeliveryOrder(
+                            id: o.DeliveryTypeId,
+                            name: o.deliveryType.NameDeliveryT
+                        ),
                     orderItems: o.OrderItemsO.Select(oi => new CreateOrderItemResponce(
-                            orderItemId : oi.OrderItemId,
-                            quantity : oi.Quantity,
-                            notes : oi.Notes,
-                            oStatusId : oi.StatusId,
-                            oStatus : oi.Status.NameStatus,
-                            oDishId : oi.DishId,
-                            oDishName : oi.Dish.NameDish,
-                            oDishImage : oi.Dish.ImageUrl
+                            id: oi.OrderItemId,
+                            quantity: oi.Quantity,
+                            notes: oi.Notes,
+                            status: new CreateOIStatus(
+                                    id: oi.StatusId,
+                                    name: oi.Status.NameStatus
+                                ),
+                            dish: new CreateOIDish(
+                                    id: oi.DishId,
+                                    name: oi.Dish.NameDish,
+                                    image: oi.Dish.ImageUrl
+                                )
                         )).ToList(),
-                    createDate : o.CreateDate,
-                    updateDate : o.UpdateDate
+                    createdAt : o.CreateDate,
+                    updatedAt : o.UpdateDate
                 )).ToList();
         }
     }

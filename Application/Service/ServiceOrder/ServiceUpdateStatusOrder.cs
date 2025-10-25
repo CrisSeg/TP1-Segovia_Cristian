@@ -35,10 +35,28 @@ namespace Application.Service.ServiceOrder
             if (s.status <= 0 || s.status >= 7)
                 throw new BadRequestException("El estado especificado no es valido");
 
-            await _command.updateOrderItemStatus(itemId, s.status);
+            if(s.status != exist.StatusId +1)
+            {
+                throw new BadRequestException("El estado especificado no es valido");
+            }
+            else
+            {
+                await _command.updateOrderItemStatus(itemId, s.status);
+            }
 
-            if(order.OrderItemsO.All(oi => oi.StatusId == 2))
+            if (order.OrderItemsO.All(oi => oi.StatusId == 2)) {
                 await _command.updateOrderStatus(order.OrderId, s.status);
+            }
+            else if (order.OrderItemsO.All(oi => oi.StatusId == 3)) {
+                await _command.updateOrderStatus(order.OrderId, s.status);
+            }
+            else if (order.OrderItemsO.All(oi => oi.StatusId == 4)) {
+                await _command.updateOrderStatus(order.OrderId, s.status);
+            }
+            else if (order.OrderItemsO.All(oi => oi.StatusId == 5)) {
+                await _command.updateOrderStatus(order.OrderId, s.status); 
+            }
+
 
             return new CreateOrderResponse(
                     order.OrderId, order.Price, order.CreateDate

@@ -9,6 +9,6 @@ namespace Application.Interfaces.InterfaceDish
 {
     public interface IServiceDeleteDish
     {
-        Task<DeleteDishResponce> DeleteDish(Guid id);
+        Task<CreateDishResponse> DeleteDish(Guid id);
     }
 }

@@ -27,7 +27,7 @@ namespace Application.Service.ServiceOrder
             _dishQuery = dishQuery;
         }
 
-        public async Task<UpdateOrderByItemResponse> updateOrderItemList(long id, List<UpdateOrderItemRequest> items)
+        public async Task<UpdateOrderByItemResponse> updateOrderItemList(long id, List<CreateOrderItemRequest> items)
         {
             var orderById = await _orderQuery.GetOrderById(id);
 
@@ -45,28 +45,28 @@ namespace Application.Service.ServiceOrder
 
             foreach (var item in items)
             {
-                if (!dishStatus.TryGetValue(item.DishID, out var isAvialable) || !isAvialable)
+                if (!dishStatus.TryGetValue(item.id, out var isAvialable) || !isAvialable)
                     throw new BadRequestException("El plato no se encuentra disponible");
 
                 var exist = orderById.OrderItemsO
-                    .FirstOrDefault(oi => oi.DishId == item.DishID);
+                    .FirstOrDefault(oi => oi.DishId == item.id);
                 if (exist == null)
                     orderById.OrderItemsO.Add(new OrderItem
                     {
-                        DishId = item.DishID,
-                        Quantity = item.Quantity,
-                        Notes = item.Notes,
+                        DishId = item.id,
+                        Quantity = item.quantity,
+                        Notes = item.notes,
                         StatusId = 1,
                         CreateDate = DateTime.Now
                     });
                 else
                 {
-                    exist.Quantity = item.Quantity;
-                    exist.Notes = item.Notes;
+                    exist.Quantity = item.quantity;
+                    exist.Notes = item.notes;
                 }
 
-                if (dishPrice.TryGetValue(item.DishID, out double isPrice))
-                    price += Convert.ToDouble(item.Quantity) * isPrice;
+                if (dishPrice.TryGetValue(item.id, out double isPrice))
+                    price += Convert.ToDouble(item.quantity) * isPrice;
             }
 
             orderById.Price = price;

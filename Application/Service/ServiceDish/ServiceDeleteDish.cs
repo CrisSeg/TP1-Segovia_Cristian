@@ -25,7 +25,7 @@ namespace Application.Service.ServiceDish
             this.orderItemQuery = orderItmeQuery;
         }
 
-        public async Task<DeleteDishResponce> DeleteDish(Guid id)
+        public async Task<CreateDishResponse> DeleteDish(Guid id)
         {
             var dish = await dishQuery.GetDishById(id);
             if (dish is null)
@@ -39,8 +39,19 @@ namespace Application.Service.ServiceDish
 
             var categoryName = await dishQuery.GetCategoryById(dish.CategoryId) ?? string.Empty;
 
-            return new DeleteDishResponce(
-                    dish.DishId, dish.NameDish, dish.Description, dish.Price, dish.CategoryId, categoryName, dish.ImageUrl ,dish.IsDelete, dish.CreateDate, dish.UpdateDate
+            return new CreateDishResponse(
+                    id: id,
+                    name: dish.NameDish,
+                    description: dish.Description,
+                    price: dish.Price,
+                    new CreateDishCategory(
+                        id: dish.CategoryId,
+                        name: dish.Category.NameCategory
+                    ),
+                    image: dish.ImageUrl,
+                    isActive: dish.Avialable,
+                    createdAt: dish.CreateDate,
+                    updatedAt: dish.UpdateDate
                 );
         }
     }

@@ -8,8 +8,8 @@ namespace Application.Response
 {
     public record UpdateOrderByItemResponse
     (
-        long orderId,
-        double Price,
-        DateTime updateDate
+        long orderNumber,
+        double totalAmount,
+        DateTime updatedAt
     );
 }

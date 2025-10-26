@@ -46,8 +46,8 @@ namespace menuRestaurante.Controllers
             return new JsonResult(result);
         }
 
-        [HttpPatch]
-        public async Task<IActionResult> updateOrderItem([FromQuery] long id, [FromBody] List<CreateOrderItemRequest> items)
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> updateOrderItem([FromRoute] long id, [FromBody] List<CreateOrderItemRequest> items)
         {
             var result = await _updateOrderItem.updateOrderItemList(id, items);
             return new JsonResult(result);
